@@ -1,1 +1,19 @@
 // Mixins Here
+.flex-model(@align,@justify,@direction){
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
+    flex-direction: @direction;
+}
+.mybtn(@background, @color){
+    border: 1px black solid;
+        box-sizing: border-box;
+        width:20%;
+        border-radius: 3px;
+        padding: 5px;
+        text-align: center;
+        background-color: @background;
+        color: @color;
+        font-size: 1.2rem;
+}
+
